@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUREVSKI | Precision Marketing</title>
+    <meta name="description" content="Проширете си го вашиот бренд со ШТУРЕВСКИ, резултатите го кажуваат своето.">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loader">
+    <div class="loader-content">
+        <span class="loader-logo">STUREVSKI</span>
+        <div class="loader-bar"></div>
+    </div>
+</div>
+
+<div id="gate" class="gate-hidden">
+    <div class="gate-option home-opt">
+        <div class="gate-content">
+            <h2>Почетна</h2>
+            <p>Погледни го искуството и работата</p>
+            <button onclick="enterSite('home')">Види</button>
+        </div>
+    </div>
+    <div class="gate-option contact-opt">
+        <div class="gate-content">
+            <h2>Контакт</h2>
+            <p>Сакаш соработка?</p>
+            <button onclick="enterSite('contact')">Контактирај</button>
+        </div>
+    </div>
+</div>
+
+<nav>
+    <div class="logo">STUREVSKI</div>
+    <div class="nav-links">
+        <a href="#portfolio">Искуство</a>
+        <a href="#contact">Контакт</a>
+    </div>
+</nav>
+
+<header class="hero">
+    <div class="logo">STUREVSKI</div>
+    <p>Проширете си го вашиот бренд, резултатите го кажуваат своето.</p>
+    <a href="#portfolio" class="btn">View Our Work</a>
+</header>
+
+<section class="about reveal">
+    <div class="about-content">
+        <img src="headshot.jpg" alt="Founder of STUREVSKI" class="headshot">
+        <div class="about-text">
+            <h2>Стефан Штуревски</h2>
+            <p>Прецизност, активност и работа. Овие се моите најголеми вештини. Го одземам мачниот дел на рекламирање, објавување и правење маркетинг кампањи.</p>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio" class="portfolio">
+    <h2>Искуство</h2>
+    <div class="item">
+        <a href="https://www.instagram.com/aneta_bend/" target="_blank" class="portfolio-link">
+            <div class="image-container">
+                <img src="portfolio.jpg" alt="STUREVSKI Project Mockup" class="portfolio-img">
+                <div class="overlay">
+                    <span>Aneta Band →</span>
+                </div>
+            </div>
+        </a>
+        <h3>Aneta Band</h3>
+        <p>Го менаџирам овој профил помалку од 1 месец</p>
+	<p>Проверете ги статистиките</p>
+        
+        <div class="project-stats">
+            <div class="stat-box">
+                <span class="stat-number">1.000 Followers</span>
+                <span class="stat-label">2 Недели</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">200K+ Organic Views</span>
+                <span class="stat-label">2 Недели</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">12.000 Likes/Shares/Re-posts</span>
+                <span class="stat-label">2 Недели</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="contact-container">
+        <div class="info">
+            <h2>Контакт</h2>
+            <p>Контактирај: shturevski@gmail.com</p>
+            <p>Location: Битола, Македонија</p>
+        </div>
+       <form id="contactForm" name="contact" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact">
+    
+    <input type="text" name="name" placeholder="Име" required>
+    <input type="email" name="email" placeholder="E-мејл" required>
+    <textarea name="message" placeholder="Вовед" rows="5" required></textarea>
+    <button type="submit" class="btn">Контактирај</button>
+</form>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
